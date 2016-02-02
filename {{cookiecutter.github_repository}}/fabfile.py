@@ -60,7 +60,7 @@ def install_requirements(file=env.requirements_file):
     verify_virtualenv()
     # activate virtualenv and install
     with virtualenv():
-        local('pip install -r %s' % file)
+        local('pip3 install -r %s' % file)
 
 
 def serve_docs(options=''):
